@@ -129,6 +129,21 @@ az account show -o table
 ### 4. Set Default Organization & Project
 Save yourself from passing `--organization` and `--project` flags with every command:
 
+Ab pehle project name pata karo:
+
+az devops project list --organization https://dev.azure.com/shahiashwani071 -o table
+Phir configure karo
+
+Maan lo output mein project:
+
+Name
+----------------
+ADO-Pipeline
+
+To:
+
+az devops configure --defaults organization=https://dev.azure.com/shahiashwani071 project="ADO-Pipeline"
+
 ```powershell
 az devops configure --defaults organization=https://dev.azure.com/YOUR_ORG project="YOUR_PROJECT"
 ```
